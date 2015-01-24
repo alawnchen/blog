@@ -15,17 +15,21 @@ module.exports = function(grunt) {
 	    files : [ 'assets/sass/*' ],
 	    tasks : [ 'sass' ]
 	},
-	'gh-pages' : {
+	buildcontrol : {
 	    options : {
 		base : '_site',
-		message : 'Auto-generated commit',
-		branch: 'master'
-	    },
-	    src : [ 'index.html', 'app/**', 'bower_components/**', 'partials/**', 'style/**' ]
+		commit : true,
+		push : true,
+		message : 'auto commit',
+		remote : 'https://github.com/gnavarro77/gnavarro77.github.com.git',
+		branch : 'master'
+	    }
 	}
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-gh-pages');
+    grunt.loadNpmTasks('grunt-build-control');
+
+    grunt.registerTask('deploy', [ 'buildcontrol' ]);
 };
