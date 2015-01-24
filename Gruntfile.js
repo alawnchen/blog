@@ -17,12 +17,16 @@ module.exports = function(grunt) {
 	},
 	buildcontrol : {
 	    options : {
-		base : '_site',
+		dir : '_site',
 		commit : true,
 		push : true,
-		message : 'auto commit',
-		remote : 'https://github.com/gnavarro77/gnavarro77.github.com.git',
-		branch : 'master'
+		message : 'auto commit'
+	    },
+	    blog : {
+		options : {
+		    remote : 'https://github.com/gnavarro77/gnavarro77.github.com.git',
+		    branch : 'master'
+		}
 	    }
 	}
     });
