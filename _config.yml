@@ -11,16 +11,8 @@ production_url : http://gnavarro77.github.io
 highlighter: pygments
 markdown: kramdown
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md","Gruntfile.js","package.json","bower.json","node_modules"]
 encoding: utf-8
 
 kramdown:
    input: GFM
-
-jekyll-archives:
-  enabled:
-    - tags
-    - categories
-  layout: 'monthly_archive'
-  permalinks:
-    tag: '/:name/'
