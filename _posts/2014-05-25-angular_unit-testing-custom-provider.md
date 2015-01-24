@@ -4,9 +4,7 @@ title: Angularjs, Unit Testing Custom Provider
 tags : [angularjs, angularjs unit test]
 ---
 
-On one of my project i ran into the need of testing a custom provider 
-and after a few online search i realized that it was not so trivial so i decided 
-to share the solution i used in case it might help someone.
+On one of my project i ran into the need of testing a custom provider and after a few online search i realized that it was not so trivial so i decided to share the solution i used in case it might help someone.
 
 ## Where it all started from!
 

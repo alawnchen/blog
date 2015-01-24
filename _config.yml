@@ -24,5 +24,3 @@ jekyll-archives:
   layout: 'monthly_archive'
   permalinks:
     tag: '/:name/'
-gems: 
-  - jekyll-archives
