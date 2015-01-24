@@ -1,0 +1,7 @@
+<h1 class="widget-title">Categories</h1>
+<ul class="icons-ul">
+	{% for category in site.categories %}
+	<li>
+	<i class="fa fa-angle-double-right"></i>
+	<a href="{{ site.url }}/{{ category | first }}">{{ category | first }}</a></li> {% endfor %}
+</ul>

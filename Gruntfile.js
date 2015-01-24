@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 	    }
 	},
 	watch : {
-	    files : [ 'assets/sass/*' ],
+	    files : [ 'assets/theme/hellish-simplicity/*.scss' ],
 	    tasks : [ 'sass' ]
 	},
 	buildcontrol : {

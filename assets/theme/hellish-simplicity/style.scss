@@ -1,15 +1,9 @@
-/*
-
-This is the original SASS build code for the CSS used in the theme.
-
-*/
-
 
 $max_header_width: 1180px;
 $max_page_width: 1080px;
 $border: 1px solid #ddd;
 $small-text: 0.8em;
-$red_colour: #d90000;
+$red_colour: #c62828;
 $grey_colour: #ddd;
 $font_standard_size: 1.0em;
 $font_reduced_size: 0.9em;
@@ -22,7 +16,6 @@ $font_serif: "Droid Serif", serif;
 	-moz-border-radius: $radius;
 	-webkit-border-radius: $radius;
 }
-
 
 /* =Fonts
 -------------------------------------------------------------- */
@@ -250,7 +243,7 @@ ol {
 }
 
 ul li {
-	list-style: square;
+	list-style: none;
 	line-height: 2em;
 	margin: 0;
 	padding: 0;

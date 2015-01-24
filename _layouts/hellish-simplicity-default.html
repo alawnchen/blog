@@ -15,9 +15,10 @@
 	href="/assets/bower_components/bootstrap-css/css/bootstrap-theme.css">
 <link rel="stylesheet" href="/assets/css/solarized.css">
 <link rel="stylesheet" href="/assets/theme/hellish-simplicity/style.css">
+<link rel="stylesheet" href="/assets/bower_components/font-awesome/css/font-awesome.min.css">
 
 <script type="text/javascript"
-		src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
+	src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
 
 </head>
 <body>
@@ -33,30 +34,11 @@
 		<div id="content-area">
 			<div id="site-content" role="main">{{ content }}</div>
 			<div id="sidebar" role="complementary">
-<!-- 				<aside> -->
-<!-- 					<h1 class="widget-title">Recent Posts</h1> -->
-<!-- 					<ul> -->
-<!-- 						<li><a href="https://wp-themes.com/?p=19" -->
-<!-- 							title="Look Worth A Thousand Words">Worth A Thousand Words</a></li> -->
-<!-- 						<li><a href="https://wp-themes.com/?p=36" -->
-<!-- 							title="Look Elements">Elements</a></li> -->
-<!-- 						<li><a href="https://wp-themes.com/?p=14" -->
-<!-- 							title="Look More Tags">More Tags</a></li> -->
-<!-- 						<li><a href="https://wp-themes.com/?p=8" title="Look HTML">HTML</a></li> -->
-<!-- 						<li><a href="https://wp-themes.com/?p=6" title="Look Links">Links</a></li> -->
-<!-- 						<li><a href="https://wp-themes.com/?p=4" -->
-<!-- 							title="Look Category Hierarchy">Category Hierarchy</a></li> -->
-<!-- 						<li><a href="https://wp-themes.com/?p=1" -->
-<!-- 							title="Look Hello world!">Hello world!</a></li> -->
-<!-- 					</ul> -->
-<!-- 				</aside> -->
-				<aside>
-					{% include aside_archives.html %}
-				</aside>
+				<aside>{% include aside_categories.html %}</aside>
+				<aside>{% include aside_archives.html %}</aside>
 			</div>
 		</div>
 	</div>
-
 
 </body>
 </html>

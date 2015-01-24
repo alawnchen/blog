@@ -1,8 +1,3 @@
-/*
-
-This is the original SASS build code for the CSS used in the theme.
-
-*/
 /* =Fonts
 -------------------------------------------------------------- */
 @font-face {
@@ -52,7 +47,7 @@ address {
 -------------------------------------------------------------- */
 a {
   text-decoration: none;
-  color: #d90000; }
+  color: #c62828; }
 
 a:hover {
   text-decoration: underline; }
@@ -63,7 +58,7 @@ a:hover {
   display: block;
   margin: 0 auto;
   max-width: 1180px;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ddd;
   overflow: auto; }
   #site-header .hgroup {
     overflow: hidden;
@@ -83,7 +78,7 @@ a:hover {
       #site-header h1 a:hover {
         text-decoration: none; }
       #site-header h1 a span {
-        color: #d90000; }
+        color: #c62828; }
       #site-header h1 a small {
         font-size: 65%; }
   #site-header h2 {
@@ -183,7 +178,7 @@ ol {
   margin: 1em 0 1em 1.2em; }
 
 ul li {
-  list-style: square;
+  list-style: none;
   line-height: 2em;
   margin: 0;
   padding: 0; }
@@ -228,7 +223,7 @@ pre {
   font-size: 0.9em; }
 
 input[type=text] {
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -257,7 +252,7 @@ body .wp-caption {
   max-width: 94%;
   margin: 1em auto;
   padding: 2% 2% 0 2%;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
@@ -285,7 +280,7 @@ body .wp-caption {
 article {
   margin: 0 0 2em 0;
   padding: 0 0 2em 0;
-  border-bottom: 1px solid #dddddd; }
+  border-bottom: 1px solid #ddd; }
 
 .entry-content {
   width: 100%;
@@ -357,7 +352,7 @@ td {
   padding: 3%;
   width: 24%;
   float: right;
-  border-left: 1px solid #dddddd; }
+  border-left: 1px solid #ddd; }
   #sidebar ul li {
     line-height: 1.5em; }
   #sidebar td {
@@ -376,7 +371,7 @@ td {
     height: 1.6em;
     line-height: 1.6em;
     text-align: center;
-    border: 1px solid #dddddd; }
+    border: 1px solid #ddd; }
   #numeric-pagination a {
     float: left;
     height: 1.3em;
@@ -384,7 +379,7 @@ td {
     padding: 0.1em 0.5em 0.2em 0.5em; }
   #numeric-pagination li.active a,
   #numeric-pagination li a:hover {
-    background: #d90000;
+    background: #c62828;
     text-decoration: none;
     color: #fff; }
 
@@ -405,7 +400,7 @@ ol.commentlist {
   ol.commentlist li.comment {
     list-style: none;
     background: #fafafa;
-    border: 1px solid #dddddd;
+    border: 1px solid #ddd;
     margin: 0 0 1.5em 0;
     padding: 0;
     border-radius: 6px;
@@ -432,19 +427,19 @@ ol.commentlist {
     font-style: normal; }
   ol.commentlist img.avatar {
     float: right;
-    border: 1px solid #dddddd;
+    border: 1px solid #ddd;
     margin: 0 0 1.5em 1.5em; }
   ol.commentlist .comment-reply-link {
     background: #eee;
     border-radius: 6px;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
-    border: 1px solid #dddddd;
+    border: 1px solid #ddd;
     font-size: 0.8em;
     padding: 0.4em 0.8em;
     color: #333; }
   ol.commentlist .comment-reply-link:hover {
-    background: #d90000;
+    background: #c62828;
     color: #fff;
     text-decoration: none; }
 
@@ -501,7 +496,7 @@ ol.commentlist {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   background: #fafafa;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   color: #666; }
 
 .gform_wrapper input[type=email],
@@ -537,7 +532,7 @@ ol.commentlist {
   font-size: 1.2em;
   background: #eee;
   color: #333;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -547,7 +542,7 @@ ol.commentlist {
 .gform_wrapper input[type=submit]:hover,
 .contact-form input[type=submit]:hover,
 #respond input[type=submit]:hover {
-  background: #d90000;
+  background: #c62828;
   color: #fff;
   cursor: pointer; }
 
@@ -575,7 +570,7 @@ ol.commentlist {
   font-size: 1em; }
 
 #site-info {
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ddd;
   padding: 1.6em 0; }
 
 /* =Responsive
@@ -612,7 +607,7 @@ ol.commentlist {
   float: right; }
 .rtl #sidebar {
   float: left;
-  border-right: 1px solid #dddddd;
+  border-right: 1px solid #ddd;
   border-left: none; }
 .rtl #numeric-pagination li {
   float: right; }
@@ -626,3 +621,5 @@ ol.commentlist {
   .comments-link,
   #sidebar {
     display: none; } }
+
+/*# sourceMappingURL=style.css.map */

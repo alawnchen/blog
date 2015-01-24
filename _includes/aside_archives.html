@@ -1,19 +1,16 @@
 <h1 class="widget-title">Archives</h1>
 <ul class="list-unstyled">
-
 {% for post in site.posts %}
   {% capture current %}{{post.date | date: "%B%Y"}}{% endcapture %}
   {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
   {% capture month %}{{post.date | date: "%m"}}{% endcapture %}
   {% capture label%}{{post.date | date: "%B %Y"}}{% endcapture %}
-  
   {% if current != previous %}
     <li>
-    	<a href="{{ site.url }}/{{year}}/{{month}}/index.html">{{label}}</a>
+    	<i class="fa fa-angle-double-right"></i>&nbsp;<a href="{{ site.url }}/{{year}}/{{month}}/index.html">{{label}}</a>
     </li>
     {% capture previous %}{{current}}{% endcapture %} 
   {% endif %}
 {% endfor %}
-  
 </ul>
 
