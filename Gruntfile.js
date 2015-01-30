@@ -7,7 +7,8 @@ module.exports = function(grunt) {
 	    },
 	    build : {
 		files : {
-		    'assets/theme/hellish-simplicity/style.css' : 'assets/theme/hellish-simplicity/style.scss'
+		    'assets/theme/hellish-simplicity/style.css' : 'assets/theme/hellish-simplicity/style.scss',
+		    'assets/css/blog.css' : 'assets/sass/blog.css'
 		}
 	    }
 	},
@@ -28,12 +29,18 @@ module.exports = function(grunt) {
 		    branch : 'master'
 		}
 	    }
+	},
+	clean : {
+	    deploy : {
+		src : [ '_site/.git' ]
+	    }
 	}
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-build-control');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
-    grunt.registerTask('deploy', [ 'buildcontrol' ]);
+    grunt.registerTask('deploy', [ 'clean:deploy', 'buildcontrol' ]);
 };

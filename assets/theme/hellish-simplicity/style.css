@@ -123,7 +123,9 @@ h6 {
 
 h1.widget-title {
   font-size: 1.4em;
-  font-weight: bold; }
+  font-weight: bold;
+  border-bottom: 0.76667px #dddddd solid;
+  padding-bottom: 2px; }
 
 h1 {
   font-size: 2.4em;
@@ -343,7 +345,7 @@ td {
   max-width: 1080px; }
 
 #site-content {
-  width: 63%;
+  width: 70%;
   padding: 0 0 0 3%;
   float: left;
   overflow: hidden; }

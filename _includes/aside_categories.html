@@ -3,5 +3,5 @@
 	{% for category in site.categories %}
 	<li>
 	<i class="fa fa-angle-double-right"></i>
-	<a href="{{ site.url }}/{{ category | first }}">{{ category | first }}</a></li> {% endfor %}
+	<a href="{{ site.url }}/categories/{{ category | first }}/index.html">{{ category | first }}</a></li> {% endfor %}
 </ul>
