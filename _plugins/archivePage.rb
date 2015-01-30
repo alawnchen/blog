@@ -17,6 +17,7 @@ module Jekyll
       self.basename = 'index'
       self.content = <<-EOS
 
+<h1 class="category"><i class="fa fa-calendar fa-3"></i> {{ page.title }}</h1>
 {% for post in page.posts %}
 <article class="post type-post">
 	<header class="entry-header">
