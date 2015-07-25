@@ -3,20 +3,16 @@ layout: default
 ---
 
 {% for post in site.categories[page.category] %}
-<article class="post type-post">
-	<header class="entry-header">
-		<h1 class="entry-title">
-			{{ post.title }}
-		</h1>
-	</header>
-	<div class="date">
-      {{ page.date | date: "%B %d, %Y" }} by <a href="#">{{site.author.name}}</a>
-    </div>
-	<div class="entry-content">
-		{{post.excerpt}} 
-		<p>
-			<a class="pull-right" href="{{ post.url }}">[read more]</a>
-		</p>
-	</div>
-</article>
+<div class="blog-post">
+	<h2 class="blog-post-title">
+		{{ post.title }}
+	</h2>
+	<p class="blog-post-meta">
+		{{ post.date | date: "%B %d, %Y" }} by <a href="#">{{site.author.name}}</a>
+	</p>
+	<p>{{post.excerpt}}</p>
+	<p>
+		<a class="pull-right" href="{{ post.url }}">[read more]</a>
+	</p>
+</div>
 {% endfor %}
