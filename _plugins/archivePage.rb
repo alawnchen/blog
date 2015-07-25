@@ -17,29 +17,20 @@ module Jekyll
       self.basename = 'index'
       self.content = <<-EOS
 
-<h1 class="category"><i class="fa fa-calendar fa-3"></i> {{ page.title }}</h1>
 {% for post in page.posts %}
-<article class="post type-post">
-	<header class="entry-header">
-		<h1 class="entry-title">
-			{{ post.title }}
-		</h1>
-	</header>
-	<div class="date">
-      <span>{{ post.date |  date_to_long_string}}</span>
-    </div>
-	<div class="entry-content">
-		{{post.excerpt}} 
-		<p>
-			<a class="pull-right" href="{{ post.url }}">[read more]</a>
-		</p>
-	</div>
-</article>
+<div class="blog-post">
+	<h2 class="blog-post-title">{{ post.title }}</h2>
+	<p class="blog-post-meta">{{ post.date |  date_to_long_string}}</p>
+	<p>{{post.excerpt}} </p>
+	<p>
+		<a class="pull-right" href="{{ post.url }}">[read more]</a>
+	</p>
+</div>
 {% endfor %}
 
 EOS
       self.data = {
-        'layout' => 'hellish-simplicity-default',
+        'layout' => 'default',
         'type' => 'archive',
         'title' => "Archive for #{month}",
         'posts' => posts

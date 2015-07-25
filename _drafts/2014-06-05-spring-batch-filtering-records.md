@@ -1,5 +1,5 @@
 ---
-layout: hellish-simplicity-post
+layout: post
 title: Spring Batch, Filtering Records
 tags : [Spring, Batch, Spring Batch]
 ---

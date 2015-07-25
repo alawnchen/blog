@@ -1,7 +1,8 @@
-<h1 class="widget-title">Categories</h1>
-<ul class="icons-ul">
+<h4>Categories</h4>
+<ul class="list-unstyled">
 	{% for category in site.categories %}
 	<li>
 	<i class="fa fa-angle-double-right"></i>
-	<a href="{{ site.url }}/categories/{{ category | first }}/index.html">{{ category | first }}</a></li> {% endfor %}
+	<a href="{{ site.url }}/categories/{{ category | first }}/index.html">{{ category | first }}</a>{% endfor %}
+	</li>
 </ul>

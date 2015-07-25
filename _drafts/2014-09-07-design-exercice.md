@@ -1,5 +1,5 @@
 ---
-layout: hellish-simplicity-post
+layout: post
 title: Design exercice
 tags : [conception, design]
 ---

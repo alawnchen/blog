@@ -2,18 +2,14 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
 	sass : {
-	    options : {
-
-	    },
 	    build : {
 		files : {
-		    'assets/theme/hellish-simplicity/style.css' : 'assets/theme/hellish-simplicity/style.scss',
 		    'assets/css/blog.css' : 'assets/sass/blog.css'
 		}
 	    }
 	},
 	watch : {
-	    files : [ 'assets/theme/hellish-simplicity/*.scss' ],
+	    files : [ 'assets/sass/*.css' ],
 	    tasks : [ 'sass' ]
 	},
 	buildcontrol : {

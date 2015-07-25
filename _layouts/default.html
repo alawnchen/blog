@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Blog">
+<meta name="author" content="{{ site.author.name }}">
+
+<title>{{page.title}}</title> {% if page.description %}
+<meta name="description" content="{{ page.description }}">
+{% endif %}
+
+<link rel="stylesheet"
+	href="/assets/bower_components/bootstrap-css/css/bootstrap.css">
+<link rel="stylesheet"
+	href="/assets/bower_components/bootstrap-css/css/bootstrap-theme.css">
+<link rel="stylesheet" href="/assets/css/solarized.css">
+<link rel="stylesheet"
+	href="/assets/bower_components/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/assets/css/blog.css">
+
+<script type="text/javascript"
+	src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
+
+</head>
+<body>
+<body>
+
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">De choses et d'autres</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+<!-- 				<ul class="nav navbar-nav"> -->
+<!-- 					<li class="active"><a href="#">Home</a></li> -->
+<!-- 				</ul> -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="https://github.com/gnavarro77" title="find me on github"><i class="fa fa-github"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-sm-8 blog-main">{{ content }}</div>
+
+			<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+				<div class="sidebar-module sidebar-module-inset">
+					<h4>About</h4>
+					<p>
+						Hi, my name is Gilles Navarro. I've been writing down code for quite a while now and this blog is to share some stuff I've learnt along the way. 
+					</p>
+				</div>
+				<div class="sidebar-module">
+					<aside>{% include aside_categories.html %}</aside>
+				</div>
+				<div class="sidebar-module">
+					<aside>{% include aside_archives.html %}</aside>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="blog-footer">
+		<p>
+			<a href="https://github.com/gnavarro77"><i class="fa fa-github fa-2x"></i> <span>find me on github</span></a>
+		</p>
+	</footer>
+
+</body>
+</html>
+
