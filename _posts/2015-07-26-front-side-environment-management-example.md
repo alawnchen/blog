@@ -5,7 +5,7 @@ category : AngularJS
 tags : [Grunt, AngularJS, environment management]
 ---
 
-> In this post we will consider a front side application built using `AngularJS`, `Grunt`, `Bower` as part of its technical stack.
+> In this post we are going to consider a front side application built using `AngularJS`, `Grunt`, `Bower` as part of its technical stack.
 
 > For the purpose of this example we will only consider `development` and `production` environments. 
 
