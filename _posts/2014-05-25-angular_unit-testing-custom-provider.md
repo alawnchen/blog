@@ -2,7 +2,7 @@
 layout: post
 title: AngularJS, Unit Testing Custom Provider
 category : AngularJS
-tags : [AngularJS, AngularJS unit test]
+tags : [AngularJS, Unit test]
 ---
 
 On one of my project i ran into the need of testing a custom provider and after a few online search i realized that it was not so trivial so i decided to share the solution i used in case it might help someone.
