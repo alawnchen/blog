@@ -18,14 +18,16 @@ module Jekyll
       self.content = <<-EOS
 
 {% for post in page.posts %}
-<div class="blog-post">
-	<h2 class="blog-post-title">{{ post.title }}</h2>
-	<p class="blog-post-meta">{{ post.date |  date_to_long_string}}</p>
+<article>
+	<h1>{{ post.title }}</h1>
+	<aside>
+		<time datetime="{{ post.date | date: "%Y-%B-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+	</aside>
 	<p>{{post.excerpt}} </p>
 	<p>
 		<a class="pull-right" href="{{ post.url }}">[read more]</a>
 	</p>
-</div>
+</article>
 {% endfor %}
 
 EOS
@@ -56,9 +58,9 @@ EOS
     
     def to_liquid
       self.data.merge({
-                             "url" => self.url,
-                             "content" => self.content
-                           })
+         "url" => self.url,
+         "content" => self.content
+       })
     end
 
     # Write the generated page file to the destination directory.

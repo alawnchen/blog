@@ -2,12 +2,10 @@
 layout: default 
 ---
 
-<div class="blog-post">
-	<h2 class="blog-post-title">
-		{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{%	endif %}
-	</h2>
-	<p class="blog-post-meta">
-		{{ page.date | date: "%B %d, %Y" }} by <a href="#">{{site.author.name}}</a>
-	</p>
+<article>
+	<h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{%	endif %}</h1>
+	<aside>
+		<time datetime="{{ page.date | date: "%Y-%B-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time>
+	</aside>
 	<p>{{ content }}</p>
-</div>
+</article>

@@ -5,7 +5,7 @@ category : Agility
 tags : [project management, agility, continous delivery]
 ---
 
-Of course there is no recipe to make a project successful. But I believe continuous delivery is a great key to success and should be considered on the very early stages of a project.
+Of course there is no recipe to make a project successful. But I believe continuous delivery is a great key to success and should be considered at a project early stage.
 
 ### Continuous delivery
 

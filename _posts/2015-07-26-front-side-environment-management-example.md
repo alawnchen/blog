@@ -5,9 +5,9 @@ category : AngularJS
 tags : [Grunt, AngularJS, environment management]
 ---
 
-> In this post we are going to consider a front side application built using `AngularJS`, `Grunt`, `Bower` as part of its technical stack.
+In this post we are going to consider a front side application built using `AngularJS`, `Grunt`, `Bower` as part of its technical stack.
 
-> For the purpose of this example we will only consider `development` and `production` environments. 
+For the purpose of this example we will only consider `development` and `production` environments. 
 
 ### Why the `dev` and the `production` environments should differ?
 
@@ -55,29 +55,29 @@ First we had the placeholders required for injection in the `index.html`.
 then we declare the injection into the `Gruntfile.js` (customize to match your project structure).
 
 {% highlight js %}
-	injector : {
-		// inject bower css and js dependencies into the file index.html
-	    bower : {
-			options : {
-			    starttag : '<!-- bower:{{ext}} -->',
-			    endtag : '<!-- endbower -->',
-			    addRootSlash : false // depends on your project
-			},
-			files : {
-			    'index.html' : [ 'bower.json' ],
-			}
-	    },
-	    // 
-	    app : {
-			options : {
-			    addRootSlash : false, // depends on your project
-			    relative : true // depends on your project
-			},
-			files : {
-			    'index.html' : [ 'ordered application js files', 'another file', '...' ],
-			}
-	    }
-	}
+injector : {
+	// inject bower css and js dependencies into the file index.html
+    bower : {
+		options : {
+		    starttag : '<!-- bower:{{ext}} -->',
+		    endtag : '<!-- endbower -->',
+		    addRootSlash : false // depends on your project
+		},
+		files : {
+		    'index.html' : [ 'bower.json' ],
+		}
+    },
+    // 
+    app : {
+		options : {
+		    addRootSlash : false, // depends on your project
+		    relative : true // depends on your project
+		},
+		files : {
+		    'index.html' : [ 'ordered application js files', 'another file', '...' ],
+		}
+    }
+}
 {% endhighlight %}
 
 and with the following registered `Grunt` task 
