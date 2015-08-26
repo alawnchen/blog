@@ -19,6 +19,7 @@
 <link rel="stylesheet"
 	href="/assets/bower_components/font-awesome/css/font-awesome.min.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>	
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/assets/css/blog.css">
 
 <script type="text/javascript"
@@ -28,21 +29,31 @@
 <body>
 
 	<aside>
-		<section class="profile">
+		<div class="stripe"></div>
+		<section>
 			<h1>
 				<em>Gilles Navarro</em> 
 			</h1>
 			<p>
 			Hi, I've been writing down some code for quite a while now and this blog is to share some stuff I learned along the way. 
 			</p>
-		</section>
-		
-		<nav role="navigation">
+			
+			<nav class="elsewhere">
 			<ul>
-				<li><a href="https://github.com/gnavarro77"
-					title="find me on github"><i class="fa fa-github"></i></a></li>
+				<li>
+					<a href="https://github.com/gnavarro77"
+						title="find me on github"><i class="fa fa-2x fa-github"></i></a>
+				</li>
+				<li>
+					<a href="https://github.com/gnavarro77"
+						title="find me on linkedin "><i class="fa fa-2x fa-linkedin"></i></a>
+				</li>
 			</ul>
 		</nav>
+			
+		</section>
+		
+		
 		
 <!-- 		<div class="legal"> -->
 <!-- 			<small class="copyright">&copy; Glenn Naessens - 2015</small> - <a -->
@@ -63,8 +74,10 @@
 	</main>
 	
 	<aside class="right" role="navigation">
-		{% include aside_categories.html %}
-		{% include aside_archives.html %}
+		<section>
+			{% include aside_categories.html %}
+			{% include aside_archives.html %}
+		</section>
 	</aside>
 	
 	

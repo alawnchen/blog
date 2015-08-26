@@ -33,7 +33,7 @@ Things would have been too sweet if no cost was involved. This approach implies 
 - to run the platform automating the deliveries
 - to establish rollback mechanisms in case of corrupted deliveries
 
-This list is probably not exhautive.
+This list is not exhautive.
 
 ### Were do we go from here?
 
